@@ -1,0 +1,206 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/index.img/fondocarrito.jpeg);
+    background-size: cover;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+.container {
+    display: flex;
+    width: 90%;
+    height: 80%;
+    max-width: 1200px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 30%;
+    border-right: 2px solid #ccc;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.package {
+    background: #ee7474;
+    color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 18px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.package:hover {
+    background: #dd5050;
+}
+
+.main-content {
+    width: 70%;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mensaje-de-bienvenida {
+    text-align: center;
+}
+
+.info {
+    display: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+.info h2 {
+    color: #682297;
+}
+
+.info p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.buy-btn {
+    background-color: #3ab6f0;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.buy-btn:hover {
+    background-color: #2284bd;
+}
+
+.carrito {
+    width: 300px;
+    background: linear-gradient(to bottom, hwb(49 29% 4%), #dd5050);
+    border-left: 2px solid #ccc;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-carrito {
+    font-family: monospace;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.elemento-carrito {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.carrito-item {
+    font-family:  monospace;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.carrito-item span {
+    font-size: 16px;
+}
+
+.total {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.eliminar {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #000;
+    font-size: 20px;
+    padding: 0;
+}
+
+.form-pago {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-pago label {
+    margin-bottom: 1px;
+    font-weight: bold;
+}
+.form-pago label p {
+    font-size: 10px;
+}
+
+.form-pago input, .form-pago select {
+    padding: 5px;
+    margin-bottom: 1px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: calc(100% - 22px);
+}
+
+.form-pago input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+.form-pago button {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    background-color: #19b0ec;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+
+}
+.form-pago button:hover {
+    background-color: #2284bd;
+}
+
+.buy-btn {
+    background-color: #3ab6f0;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.buy-btn:hover {
+    background-color: #2272bd;
+}

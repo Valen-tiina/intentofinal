@@ -1,0 +1,195 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+nav.main-nav {
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    top: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 7%;
+    height: 100px;
+    background: linear-gradient(to left, hwb(49 29% 4%), #dd5050);
+    box-shadow: 10px 10px 15px rgba(72, 26, 73, 0.3);
+    display: flex; /* Utiliza flexbox para alinear los elementos dentro del nav */
+    justify-content: space-between; /* Espacio entre el logo y el listado */
+    align-items: center; /* Centra verticalmente el contenido */
+}
+
+nav .logo {
+    display: flex; /* Utiliza flexbox en el contenedor del logo */
+    align-items: center; /* Centra verticalmente el contenido del logo */
+    height: 100%; /* Ocupa toda la altura del contenedor */
+    list-style-type: none; /* Elimina las viñetas */
+}
+
+nav .logo img {
+    height: auto; /* Mantiene la proporción del logo */
+    max-height: 100px; /* Limita la altura máxima del logo, ajusta según sea necesario */
+    width: auto; /* Mantiene la proporción del logo */
+}
+
+nav .lista {
+    float: right;
+    padding: 0;
+    margin: 0;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .lista li {
+    list-style: none;
+}
+
+nav .lista a {
+    display: block;
+    text-transform: capitalize;
+    padding: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+nav .lista a:hover {
+    border-bottom: 3px solid #dd5050;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* Azul */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+h1{
+    font-size: 37px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #a72323;
+    text-align: center;
+    font-weight: bolder;
+    font-style: italic;  
+}
+h2 {
+    color: #dd5050; /* Salmón */
+}
+.logo {
+    margin: 20px 0;
+}
+.logo img {
+    width: 150px; /* Ajusta el tamaño del logo según sea necesario */
+    cursor: pointer;
+}
+.mantenimiento-section {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 900px;
+    background-color: #fff;
+    color: #000;
+}
+.mantenimiento-item {
+    margin: 15px 0;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+.mantenimiento-item:last-child {
+    border-bottom: none;
+}
+.mantenimiento-item img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+}
+.mantenimiento-item h2 {
+    color: #dd5050; /* Morado */
+}
+.mantenimiento-item p {
+    font-size: 16px;
+}
+.mantenimiento1-section {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 900px;
+    background-color: #fff;
+    color: #000;
+}
+.mantenimiento1-item {
+    margin: 15px 0;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+.mantenimiento1-item:last-child {
+    border-bottom: none;
+}
+.mantenimiento1-item img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+}
+.mantenimiento1-item h2 {
+    color: #dd5050; /* Morado */
+}
+.mantenimiento1-item p {
+    font-size: 16px;
+}
+.mantenimiento2-section {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 900px;
+    background-color: #fff;
+    color: #000;
+
+}
+.mantenimiento2-item {
+    margin: 15px 0;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+.mantenimiento2-item:last-child {
+    border-bottom: none;
+}
+.mantenimiento2-item img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+}
+.mantenimiento2-item h2 {
+    color: #dd5050; /* Morado */
+}
+.mantenimiento2-item p {
+    font-size: 16px;
+}
+.mantenimiento3-section {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 900px;
+    background-color: #fff;
+    color: #000;
+}
+.mantenimiento3-item {
+    margin: 15px 0;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+.mantenimiento3-item:last-child {
+    border-bottom: none;
+}
+.mantenimiento3-item img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+}
+.mantenimiento3-item h2 {
+    color: #dd5050; /* Morado */
+}
+.mantenimiento3-item p {
+    font-size: 16px;
+}
+

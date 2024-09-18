@@ -1,0 +1,178 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+nav.main-nav {
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    top: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 7%;
+    height: 100px;
+    background: linear-gradient(to left, hwb(49 29% 4%), #dd5050);
+    box-shadow: 10px 10px 15px rgba(72, 26, 73, 0.3);
+    display: flex; /* Utiliza flexbox para alinear los elementos dentro del nav */
+    justify-content: space-between; /* Espacio entre el logo y el listado */
+    align-items: center; /* Centra verticalmente el contenido */
+}
+
+nav .logo {
+    display: flex; /* Utiliza flexbox en el contenedor del logo */
+    align-items: center; /* Centra verticalmente el contenido del logo */
+    height: 100%; /* Ocupa toda la altura del contenedor */
+    list-style-type: none; /* Elimina las viñetas */
+}
+
+nav .logo img {
+    height: auto; /* Mantiene la proporción del logo */
+    max-height: 100px; /* Limita la altura máxima del logo, ajusta según sea necesario */
+    width: auto; /* Mantiene la proporción del logo */
+}
+
+nav .lista {
+    float: right;
+    padding: 0;
+    margin: 0;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .lista li {
+    list-style: none;
+}
+
+nav .lista a {
+    display: block;
+    text-transform: capitalize;
+    padding: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+nav .lista a:hover {
+    border-bottom: 3px solid #dd5050;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000;
+    text-align: center;
+}
+
+h1 {
+    font-size: 40px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-weight: bolder;
+    font-style: italic;
+    color: #dd5050;
+}
+
+.reco {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    max-width: 1200px;
+    margin: 25px auto;
+}
+
+.recomendacion {
+    width: 500px;
+    margin: 15px;
+    border-radius: 10px;
+    border: 1px solid rgb(255, 228, 197); 
+    overflow: hidden; 
+}
+
+.recomendacion img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    object-fit: contain;
+}
+
+.recomendacion img:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+.texto {
+    padding: 15px;
+    background-color: #f4f4f4; /* Color de fondo para el texto */
+}
+
+.texto h2 {
+    font-size: 24px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #dd5050;
+    text-align: center;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.texto p {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    margin: 10px 0;
+}
+
+.cuadroFinal {
+    bottom: 0px;  /* Colocar abajo */
+    left: 0px;
+    right: 0px;
+    background-color: #dd5050;
+    height: 150px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 0 10%; /* Espaciado interno para todo el contenedor */
+    z-index: 9;
+    display: flex;
+    align-items: center; /* Alinea verticalmente el contenido en el centro */
+    justify-content: center; /* Centra las columnas horizontalmente */
+}
+
+.columna1, .columna2 {
+    /* Sin márgenes adicionales, Flexbox maneja la alineación */
+    text-decoration: none;
+    /* Opcional: Ajusta el ancho para las columnas si es necesario */
+}
+
+.columna1 {
+    margin-right: 160px; /* Espacio entre columnas */
+}
+
+
+.tituloColumna1, .tituloColumna2 {
+    font-size: 20px;
+    color: white;
+    margin: 0; /* Elimina márgenes adicionales alrededor del título */
+    font-weight: bolder;
+}
+
+.cuadroFinal ul {
+    list-style-type: none; /* Elimina las viñetas */
+    padding: 0; /* Elimina el espaciado interno de la lista */
+    margin: 0; /* Elimina el espaciado externo de la lista */
+}
+
+.cuadroFinal li {
+    margin: 5px 0; /* Ajusta el espaciado entre elementos de lista */
+    color: white; /* Aplica color blanco a los textos de la lista */
+}
+.cuadroFinal a {
+    color: inherit; /* Hereda el color del texto del elemento padre */
+    text-decoration: none; /* Elimina el subrayado */
+}

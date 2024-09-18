@@ -1,0 +1,238 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+nav.main-nav {
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    top: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 7%;
+    height: 100px;
+    background: linear-gradient(to left, hwb(49 29% 4%), #dd5050);
+    box-shadow: 10px 10px 15px rgba(72, 26, 73, 0.3);
+    display: flex; /* Utiliza flexbox para alinear los elementos dentro del nav */
+    justify-content: space-between; /* Espacio entre el logo y el listado */
+    align-items: center; /* Centra verticalmente el contenido */
+}
+
+nav .logo {
+    display: flex; /* Utiliza flexbox en el contenedor del logo */
+    align-items: center; /* Centra verticalmente el contenido del logo */
+    height: 100%; /* Ocupa toda la altura del contenedor */
+    list-style-type: none; /* Elimina las viñetas */
+}
+
+nav .logo img {
+    height: auto; /* Mantiene la proporción del logo */
+    max-height: 100px; /* Limita la altura máxima del logo, ajusta según sea necesario */
+    width: auto; /* Mantiene la proporción del logo */
+}
+
+nav .lista {
+    float: right;
+    padding: 0;
+    margin: 0;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .lista li {
+    list-style: none;
+}
+
+nav .lista a {
+    display: block;
+    text-transform: capitalize;
+    padding: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+nav .lista a:hover {
+    border-bottom: 3px solid #dd5050;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* Azul */
+    color: #fff;
+}
+
+.section {
+    margin-top: 20px;
+}
+
+/* Estilos generales para la tabla */
+/* Estilo para el contenedor de la tabla */
+.schedule-container {
+    width: 80%; /* Ajusta el ancho del contenedor */
+    margin: 30px auto; /* Centra el contenedor y añade espacio arriba y abajo */
+    padding: 20px; /* Espacio interno en el contenedor */
+    background-color: #f9f9f9; /* Fondo del contenedor (gris muy claro) */
+    border-radius: 8px; /* Bordes redondeados del contenedor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil alrededor del contenedor */
+    text-align: center; /* Centra el texto dentro del contenedor */
+}
+
+.schedule-container h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente moderna */
+    color: #dd5050; /* Color del título */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    text-align: center;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 35px;
+}
+
+.schedule {
+    display: flex;
+    flex-direction: column; /* Coloca los días en una columna */
+    gap: 10px; /* Espacio entre los días */
+}
+
+.day {
+    display: flex;
+    justify-content: space-between; /* Espacia los nombres de los días y los horarios */
+    padding: 10px; /* Espacio interno en cada día */
+    border-radius: 4px; /* Bordes redondeados para cada fila */
+    background-color: #ffffff; /* Fondo blanco para cada fila */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil para cada fila */
+}
+
+.day:nth-child(even) {
+    background-color: #f2f2f2; /* Color de fondo para las filas pares (gris claro) */
+}
+
+.day:hover {
+    background-color: #fffde6; /* Color de fondo al pasar el ratón sobre la fila (azul claro) */
+}
+
+.day-name {
+    font-weight: bold; /* Negrita para el nombre del día */
+    color: #000000; /* Color del nombre del día */
+}
+
+.time {
+    color: #333; /* Color del horario */
+    font-style: italic; /* Estilo en cursiva para el horario */
+}
+
+
+
+caption {
+    font-size: 1.5em; /* Tamaño de fuente para el título de la tabla */
+    margin: 10px 0; /* Espacio arriba y abajo del título */
+}
+
+.imgHorarios {
+    display: flex;
+    justify-content: space-between; /* Espacio igual entre las imágenes */
+    flex-wrap: wrap; /* Permite el ajuste de las imágenes en caso de que no quepan en una sola línea */
+    gap: 20px; /* Espacio entre los elementos */
+    margin: 20px auto; /* Margen superior e inferior */
+    max-width: 1200px; /* Ajusta el ancho máximo según sea necesario */
+    padding: 20px; /* Espacio interior alrededor de la galería */
+}
+
+.gallery-item {
+    flex: 1 1 22%; /* Cada elemento ocupa el 22% del ancho del contenedor */
+    text-align: center; /* Centra el texto debajo de las imágenes */
+    position: relative; /* Necesario para los efectos al pasar el cursor */
+    width: 40px;
+}
+
+/* Estilo de las imágenes */
+.gallery-item img {
+    width: 100%; /* Hace que las imágenes ocupen todo el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Transiciones suaves para efectos */
+}
+
+/* Estilo del texto debajo de las imágenes */
+.gallery-item p {
+    margin-top: 10px; /* Espacio entre la imagen y el texto */
+    font-size: 16px; /* Tamaño de la fuente */
+    color: #333; /* Color del texto */
+}
+
+/* Efecto al pasar el cursor sobre la imagen */
+.gallery-item:hover img {
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen */
+    opacity: 0.8; /* Cambia la opacidad de la imagen */
+}
+
+.imgHorarios img {
+    width: 300px;
+    /* Ajusta el tamaño según tus necesidades */
+    height: auto;
+    /* Ajusta el tamaño según tus necesidades */
+    object-fit: contain;
+    /* Mantiene la proporción de la imagen sin distorsionarla */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+    /* Añade bordes redondeados */
+}
+
+.imgHorarios img:hover {
+    transform: scale(1.1);
+    /* Aumenta el tamaño de la imagen */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* Añade sombra para efecto de profundidad */
+}
+
+.cuadroFinal {
+    bottom: 0px;  /* Colocar abajo */
+    left: 0px;
+    right: 0px;
+    background-color: #dd5050;
+    height: 150px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 0 10%; /* Espaciado interno para todo el contenedor */
+    z-index: 9;
+    display: flex;
+    align-items: center; /* Alinea verticalmente el contenido en el centro */
+    justify-content: center; /* Centra las columnas horizontalmente */
+}
+
+.columna1, .columna2 {
+    /* Sin márgenes adicionales, Flexbox maneja la alineación */
+    text-decoration: none;
+    /* Opcional: Ajusta el ancho para las columnas si es necesario */
+}
+
+.columna1 {
+    margin-right: 160px; /* Espacio entre columnas */
+}
+
+
+.tituloColumna1, .tituloColumna2 {
+    font-size: 20px;
+    color: white;
+    margin: 0; /* Elimina márgenes adicionales alrededor del título */
+    font-weight: bolder;
+}
+
+.cuadroFinal ul {
+    list-style-type: none; /* Elimina las viñetas */
+    padding: 0; /* Elimina el espaciado interno de la lista */
+    margin: 0; /* Elimina el espaciado externo de la lista */
+}
+
+.cuadroFinal li {
+    margin: 5px 0; /* Ajusta el espaciado entre elementos de lista */
+    color: white; /* Aplica color blanco a los textos de la lista */
+}
+.cuadroFinal a {
+    color: inherit; /* Hereda el color del texto del elemento padre */
+    text-decoration: none; /* Elimina el subrayado */
+}
